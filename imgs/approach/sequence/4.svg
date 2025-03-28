@@ -1,0 +1,17 @@
+<svg width="353" height="554" viewBox="0 0 353 554" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.99999 177C2.99999 272.545 80.4547 350 176 350C271.545 350 349 272.545 349 177C349 81.4547 271.545 4 176 3.99999C80.4547 3.99999 3 81.4547 2.99999 177Z" stroke="white" stroke-width="0.94" stroke-miterlimit="10"/>
+<path d="M349 4.00002L3 4L2.99998 350L349 350L349 4.00002Z" stroke="white" stroke-width="0.94" stroke-miterlimit="10"/>
+<path d="M349 4.00002L3 4L2.99998 551L349 551L349 4.00002Z" stroke="white" stroke-width="0.94" stroke-miterlimit="10"/>
+<path d="M351 6L351 1L346 1L346 6L351 6Z" fill="#2D2C2D" stroke="white" stroke-width="0.94" stroke-miterlimit="10"/>
+<path d="M351 352L351 348L346 348L346 352L351 352Z" fill="#2D2C2D" stroke="white" stroke-width="0.94" stroke-miterlimit="10"/>
+<path d="M351 553L351 549L346 549L346 553L351 553Z" fill="#2D2C2D" stroke="white" stroke-width="0.94" stroke-miterlimit="10"/>
+<path d="M5 6L5 1L1 1L1 6L5 6Z" fill="#2D2C2D" stroke="white" stroke-width="0.94" stroke-miterlimit="10"/>
+<path d="M5 352L5 348L1 348L1 352L5 352Z" fill="#2D2C2D" stroke="white" stroke-width="0.94" stroke-miterlimit="10"/>
+<path d="M5 553L5 549L1 549L1 553L5 553Z" fill="#2D2C2D" stroke="white" stroke-width="0.94" stroke-miterlimit="10"/>
+<path d="M346.9 179.061L351.543 179.061L351.543 174.417L346.9 174.417L346.9 179.061Z" fill="white" stroke="#272727" stroke-width="1.38" stroke-miterlimit="10"/>
+<path d="M349.183 174.091L349.453 91.957" stroke="#666666" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M352 92.0956C352 90.6908 350.865 89.5421 349.46 89.5352C348.056 89.5352 346.907 90.6701 346.9 92.0748C346.9 93.4865 348.035 94.6283 349.44 94.6352C350.844 94.6352 351.993 93.5004 352 92.0956Z" fill="#666666"/>
+<path d="M351.543 174.451L346.899 174.451L346.899 179.095L351.543 179.095L351.543 174.451Z" fill="black" stroke="#D8D8D8" stroke-width="1.38" stroke-miterlimit="10"/>
+<path d="M349.259 179.412L348.989 261.553" stroke="#666666" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M346.443 261.415C346.443 262.819 347.578 263.968 348.983 263.975C350.387 263.982 351.536 262.84 351.543 261.435C351.543 260.024 350.408 258.882 349.003 258.875C347.599 258.868 346.45 260.01 346.443 261.415Z" fill="#666666"/>
+</svg>
