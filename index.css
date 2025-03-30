@@ -28,16 +28,14 @@ body {
   position: relative;
 }
 
-.logo img {
+.logo {
   width: auto;
-  height: 140px;
-  position: fixed;
+  height: 100px;
+
   margin-top: 0px;
 
-  float: left;
   margin-right: 0px;
   opacity: 1;
-  transition: opacity 0.5s ease;
 }
 
 .logo img.hidden {
