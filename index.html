@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Human Advertising Agency</title>
+    <title>mansen</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="hamburgerMenu.css" />
     <script src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,48 +22,24 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <img src="./Assets/for web-02.png" alt="Logo" style="height: 100px" />
 
-        <div
-          style="display: flex; gap: 30px; height: 100%; align-items: center"
-        >
-          <a
-            href="#"
-            style="
-              text-decoration: none;
-              color: black;
-              font-size: 18px;
-              font-weight: bold;
-            "
-            >About Us
-          </a>
-          <a
-            href="#"
-            style="
-              text-decoration: none;
-              color: black;
-              font-size: 18px;
-              font-weight: bold;
-            "
-          >
-            Industry
-          </a>
-          <a
-            href="#"
-            style="
-              text-decoration: none;
-              color: black;
-              font-size: 18px;
-              font-weight: bold;
-            "
-            >Businesses
-          </a>
-          <a href="#" class="contact-btn">Contact Us</a>
-        </div>
-      </nav>
+  <body>
+    <header class="header-fixed">
+      <div class="header-limiter">
+        <h1>
+          <a href="#">
+            <img src="./Assets/for web-02.png" alt="Logo" class="logo"
+          /></a>
+        </h1>
+
+        <nav>
+          <a href="#about">About Us</a>
+          <a href="#industry" class="nav-link">Industry</a>
+          <a href="#businesses" class="nav-link">Businesses</a>
+          <a href="#contact" class="contact-btn">Contact Us</a>
+          <a href="#contact" class="nav-link">Contact Us</a>
+        </nav>
+      </div>
     </header>
 
     <section id="home">
@@ -103,7 +80,7 @@
       />
     </section>
 
-    <section class="parallax-section-2">
+    <section class="parallax-section-2" id="businesses">
       <p class="top-left-text">
         In building assets through strategic portfolio management maximizing
         returns, minimizing risk, and aligning every move with your long-term
@@ -159,7 +136,7 @@
       </section>
     </section>
 
-    <section class="industries-section">
+    <section class="industries-section" id="industry">
       <h1
         class="big-title"
         style="font-size: 28px; text-align: left; padding: 50px"
@@ -200,24 +177,26 @@
       <h1 class="big-title">Our Team</h1>
 
       <div class="projects">
-        <div class="single_project"></div>
-        <div class="single_project"></div>
-        <div class="single_project"></div>
+        <div class="single_project-2"></div>
+        <div class="single_project-1"></div>
+        <div class="single_project-3"></div>
       </div>
     </section>
 
-    <section class="description">
+    <section class="description" id="about">
       <p class="detail">
         We don’t just invest we redefine categories. By combining bold vision
         with operational excellence, we identify undervalued opportunities and
         transform them into premium experiences.
       </p>
-      <h3>Luxury Reimagined</h3>
-      <h3>Future-First Innovation</h3>
-      <h3>Impact That Scales</h3>
+      <div class="detail">
+        <h3>Luxury Reimagined</h3>
+        <h3>Future-First Innovation</h3>
+        <h3>Impact That Scales</h3>
+      </div>
     </section>
 
-    <section class="keep_in_touch">
+    <section class="keep_in_touch" id="contact">
       <h3 class="sub-title">CONTACT</h3>
       <h1 class="medium-title">US</h1>
       <form>
@@ -245,10 +224,11 @@
         <div class="">
           <ul>
             <li>
-              <a href="">>About us</a>
+              <a href="#about">>About us</a>
             </li>
-            <li><a href=""> >Industry</a></li>
-            <li><a href="">>Buisness </a></li>
+            <li><a href="#industry"> >Industry</a></li>
+            <li><a href="#businesses">>Businesses </a></li>
+            <li><a href="#contact">>Contact us </a></li>
           </ul>
         </div>
       </div>
