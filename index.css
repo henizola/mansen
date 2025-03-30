@@ -120,7 +120,7 @@ section h2 {
 }
 
 #home {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 350px);
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 33vw;
@@ -145,8 +145,8 @@ section h2 {
 
 .right {
   border-left: 1px solid #231f20;
-  height: 40vh;
-  margin-top: calc(100vh - 40vh - 150px);
+  height: 30vh;
+  margin-top: calc(100vh - 55vh - 150px);
 }
 
 .desc {
@@ -538,10 +538,10 @@ footer ~ * {
 
 .parallax-section-2 {
   position: relative;
-  height: 70vh;
+  height: fit-content;
+
   width: 100vw;
-  background: #bcbcbc url("your-background-image.jpg") no-repeat center
-    center/cover; /* Replace with your background */
+  background: #bcbcbc url("./Assets/L-04.png") no-repeat center center/cover; /* Replace with your background */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -562,7 +562,6 @@ footer ~ * {
   opacity: 0.8;
 }
 
-/* Large Parallax Texts */
 .big-text {
   font-size: 10vw; /* Scales responsively */
   font-weight: bold;
@@ -573,23 +572,24 @@ footer ~ * {
 }
 
 .text-one {
-  top: 35%; /* First text */
+  top: 35vh; /* First text */
   left: -60vh;
 }
 
 .text-two {
-  top: 60%; /* Second text */
+  top: 50vh; /* Second text */
   right: -10vh;
 }
 
 .columns-section {
-  background: #bcbcbc;
+  /* background: #bcbcbc; */
   display: flex;
   width: 100vw;
   height: 450px;
   justify-content: space-between;
   padding: 0;
   padding-top: 50px;
+  margin-top: 70vh;
 }
 
 .column {
@@ -779,21 +779,16 @@ footer ~ * {
   color: white;
 }
 
-/* Unique Background Images */
-.industry:nth-child(1)::before {
-  background-image: url("./Assets/pattern.webp"); /* Replace with actual image */
-}
-
 .industry:nth-child(2)::before {
-  background-image: url("media.jpg"); /* Replace with actual image */
+  background-image: url("./Assets/wellness.png"); /* Replace with actual image */
 }
 
 .industry:nth-child(3)::before {
-  background-image: url("blockchain.jpg"); /* Replace with actual image */
+  background-image: url("./Assets/office.png"); /* Replace with actual image */
 }
 
 .industry:nth-child(4)::before {
-  background-image: url("data-viz.jpg"); /* Replace with actual image */
+  background-image: url("./Assets/mall.png"); /* Replace with actual image */
 }
 
 .industry:nth-child(5)::before {
