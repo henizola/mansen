@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/cookies", {data:[{_img:{"/_ipx/f_webp/imgs/menu/bg-menu-sup.png":"\u002F_nuxt\u002Fimage\u002F701798.webp","/_ipx/f_webp/imgs/menu/bg-menu-inf2.png":"\u002F_nuxt\u002Fimage\u002F161fbe.webp","/_ipx/f_webp/imgs/footer/gradient-mobile.png":"\u002F_nuxt\u002Fimage\u002F538c74.webp"}}],fetch:{},mutations:[]});
