@@ -165,7 +165,7 @@ section h2 {
 }
 
 .portfolio {
-  padding: 0px 5vw;
+  padding: 20px 5vw;
 }
 
 .projects {
@@ -624,7 +624,7 @@ footer ~ * {
   overflow: hidden;
   cursor: pointer;
   padding-top: 10px;
-  border-right: 1px solid white;
+  border-left: 1px solid white;
 }
 
 /* Column Titles */
