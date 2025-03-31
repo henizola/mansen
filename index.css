@@ -156,17 +156,16 @@ section h2 {
 }
 
 .big-title {
-  font-size: 157px;
+  font-size: 57px;
   font-weight: 900;
-  line-height: 150px;
+  line-height: 50px;
   text-align: center;
   font-family: "nuer";
   margin: auto 0;
-  height: 100%;
 }
 
 .portfolio {
-  padding: 100px 15vw;
+  padding: 0px 5vw;
 }
 
 .projects {
@@ -175,7 +174,7 @@ section h2 {
   height: 100vh;
   display: grid;
   grid-gap: 30px;
-  padding-top: 12.5vh;
+  padding-top: 50px;
 }
 
 .single_project-2 {
@@ -221,14 +220,15 @@ section h2 {
 
 .detail {
   color: #d1d3d4;
-  font-size: 32px;
-  padding-left: 50vw;
+  font-size: 28px;
+  padding-left: 45vw;
   font-weight: 500;
   line-height: 40px;
   text-align: left;
   font-family: "nuer";
   margin: 0 auto;
   width: 80%;
+  margin-top: 50px;
 }
 
 .partnetrs {
@@ -318,13 +318,13 @@ form {
 input {
   border: none;
   background-color: transparent;
-  height: 100px;
+  height: 50px;
   border-bottom: 1px solid black;
 }
 
 input::placeholder {
   color: #999;
-  font-size: 35px;
+  font-size: 18px;
   font-weight: 700;
   text-align: left;
 }
@@ -338,18 +338,19 @@ textarea {
 
 textarea::placeholder {
   color: #999;
-  font-size: 35px;
+  font-size: 18px;
   font-weight: 700;
   text-align: left;
 }
 .submit_button {
   margin-top: 50px;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   text-align: left;
   border: 1px solid gray;
   text-align: center;
+  width: 120px;
 }
 
 .sub-title {
@@ -623,6 +624,7 @@ footer ~ * {
   overflow: hidden;
   cursor: pointer;
   padding-top: 10px;
+  border-right: 1px solid white;
 }
 
 /* Column Titles */
