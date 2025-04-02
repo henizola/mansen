@@ -1,9 +1,9 @@
 .header-fixed {
   background-color: #e6e7e8;
 
-  padding: 20px 40px;
+  padding: 10px 40px;
   height: fit-content;
-  min-height: 150px;
+  min-height: 120px;
   color: #ffffff;
   box-sizing: border-box;
   top: -100px;

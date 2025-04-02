@@ -118,7 +118,7 @@ section h2 {
 }
 
 #home {
-  height: calc(100vh - 150px);
+  height: calc(100vh - 120px);
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 33vw;
@@ -129,7 +129,7 @@ section h2 {
 
   align-items: center;
   justify-content: center;
-  background: url("./Assets/Brand\ Look\ and\ Feel-13.png");
+  background: url("./Assets/Brand-Look-and-Feel\ \(1\).jpg");
   background-size: 100vw auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -184,21 +184,21 @@ section h2 {
 .single_project-2 {
   width: 100%;
   height: 75vh;
-  background: #bcbcbc url("./Assets/Avatar-11.png") no-repeat center
+  background: #bcbcbc url("./Assets/Our-team-01.jpg") no-repeat center
     center/cover; /* Replace with your background */
 }
 
 .single_project-1 {
   width: 100%;
   height: 75vh;
-  background: #bcbcbc url("./Assets/Avatar-12.png") no-repeat center
+  background: #bcbcbc url("./Assets/Our-team-02.jpg") no-repeat center
     center/cover; /* Replace with your background */
 }
 
 .single_project-3 {
   width: 100%;
   height: 75vh;
-  background: #bcbcbc url("./Assets/Avatar-11.png") no-repeat center
+  background: #bcbcbc url("./Assets/Our-team-01.jpg") no-repeat center
     center/cover; /* Replace with your background */
 }
 
