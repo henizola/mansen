@@ -118,7 +118,7 @@ section h2 {
 }
 
 #home {
-  height: calc(100vh - 250px);
+  height: calc(100vh - 150px);
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 33vw;
@@ -129,6 +129,10 @@ section h2 {
 
   align-items: center;
   justify-content: center;
+  background: url("./Assets/Brand\ Look\ and\ Feel-13.png");
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slogan {
@@ -180,25 +184,22 @@ section h2 {
 .single_project-2 {
   width: 100%;
   height: 75vh;
-  background: #bcbcbc
-    url("./Assets/freepik_the_style_is_candid_image_photography_with_natural_6757.jpeg")
-    no-repeat center center/cover; /* Replace with your background */
+  background: #bcbcbc url("./Assets/Avatar-11.png") no-repeat center
+    center/cover; /* Replace with your background */
 }
 
 .single_project-1 {
   width: 100%;
   height: 75vh;
-  background: #bcbcbc
-    url("./Assets/freepik_the_style_is_candid_image_photography_with_natural_6752.jpeg")
-    no-repeat center center/cover; /* Replace with your background */
+  background: #bcbcbc url("./Assets/Avatar-12.png") no-repeat center
+    center/cover; /* Replace with your background */
 }
 
 .single_project-3 {
   width: 100%;
   height: 75vh;
-  background: #bcbcbc
-    url("./Assets/freepik_the_style_is_candid_image_photography_with_natural_6753.jpeg")
-    no-repeat center center/cover; /* Replace with your background */
+  background: #bcbcbc url("./Assets/Avatar-11.png") no-repeat center
+    center/cover; /* Replace with your background */
 }
 
 .description {
