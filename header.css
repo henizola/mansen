@@ -1,14 +1,16 @@
 .header-fixed {
   background-color: #e6e7e8;
-
-  padding: 10px 40px;
+  position: fixed;
+  padding: 0px 40px;
   height: fit-content;
-  min-height: 120px;
+  min-height: 100px;
   color: #ffffff;
   box-sizing: border-box;
-  top: -100px;
+  top: 0px;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
+  z-index: 99999999;
+  width: 100vw;
 }
 
 .header-fixed .header-limiter {

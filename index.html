@@ -55,18 +55,12 @@
     </header>
 
     <section id="home">
-      <!-- <div class="left">
-        <h1 class="slogan">
-          Raising <br />
-          the Bar<br />
-        </h1>
-      </div> -->
-      <!-- <div class="right">
-        <p class="desc">
-          A bar isn’t just a measure it’s a challenge. We push limits, redefine
-          expectations, and elevate what’s possible in everything.
-        </p>
-      </div> -->
+      <div class="owl-carousel" id="owl-carousel-2">
+        <img src="./Assets/Brand Look and Feel-13.png" class="sliders" alt="" />
+        <img src="./Assets/Brand Look and Feel-14.png" class="sliders" alt="" />
+        <img src="./Assets/Brand Look and Feel-15.png" class="sliders" alt="" />
+        <img src="./Assets/Brand Look and Feel-16.png" class="sliders" alt="" />
+      </div>
     </section>
     <section class="parallax-video-section">
       <video id="parallaxVideo" autoplay muted loop>
@@ -102,7 +96,7 @@
       <h1 class="big-text text-one" id="parallaxText1">Where</h1>
       <h1 class="big-text text-two" id="parallaxText2">We Invest</h1>
       <section class="columns-section">
-        <div class="owl-carousel">
+        <div class="owl-carousel" id="owl-carousel-1">
           <div class="column">
             <div class="column-title">Real Estate & Property Development</div>
             <div class="column-description">
@@ -426,9 +420,9 @@
 
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+        $("#owl-carousel-1").owlCarousel({
           loop: true, // Enable looping
-          margin: 10, // Space between items
+          margin: 0, // Space between items
           nav: true, // Show next/prev buttons
           dots: true, // Show dots
           autoplay: true, // Auto-play slides
@@ -442,7 +436,29 @@
         });
       });
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel();
+        $("#owl-carousel-1").owlCarousel();
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("#owl-carousel-2").owlCarousel({
+          loop: true, // Enable looping
+          margin: 0, // Space between items
+          nav: false, // Show next/prev buttons
+          dots: false, // Show dots
+          autoplay: true, // Auto-play slides
+          autoplayTimeout: 3000, // Delay in ms (3 seconds)
+          autoplayHoverPause: false, // Pause autoplay on hover
+          responsive: {
+            0: { items: 1 }, // 1 item on small screens
+            600: { items: 1 }, // 2 items on tablets
+            1000: { items: 1 }, // 3 items on larger screens
+          },
+        });
+      });
+      $(document).ready(function () {
+        $("#owl-carousel-2").owlCarousel();
       });
     </script>
   </body>
