@@ -132,7 +132,9 @@ section h2 {
 .sliders {
   width: 100vw;
   height: auto;
+  min-height: 50vh;
   object-fit: cover;
+  object-position: left center;
 }
 .slogan {
   font-size: 9vw;
@@ -1003,5 +1005,8 @@ footer ~ * {
   }
   .header-fixed {
     display: none;
+  }
+  .logo {
+    height: 20px !important;
   }
 }

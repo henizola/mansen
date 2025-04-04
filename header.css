@@ -133,25 +133,17 @@ body.fixed .header-fixed .header-limiter nav {
   }
 }
 
-/*
-	 We are clearing the body's margin and padding, so that the header fits properly.
-	 We are also adding a height to demonstrate the scrolling behavior. You can remove
-	 these styles.
- */
-
-body {
-  margin: 0;
-  padding: 0;
-  height: 1500px;
-}
-
 .navbar {
   background-color: #fff;
   border-bottom: 1px solid #e5e7eb;
   position: relative;
-  padding: 0 !important;
+  padding: 15px 0 !important;
+  width: 100vw !important;
   display: flex;
+  position: fixed !important;
+  top: 0;
   justify-content: space-between;
+  z-index: 9999999999999999999999999;
 }
 
 .nav-container {
@@ -160,6 +152,7 @@ body {
   align-items: center;
   padding: 12px 20px;
   width: 100vw;
+  z-index: 9999999999999999999999999;
 }
 
 .logo {
@@ -192,21 +185,26 @@ body {
   width: 100%;
   position: absolute;
   top: 100%;
+  justify-content: space-around;
   left: 0;
   background-color: #fff;
   border-top: 1px solid #e5e7eb;
 }
 
 .nav-links li {
-  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-links li a {
   display: block;
   text-decoration: none;
-  padding: 12px 20px;
-  color: #374151;
+  padding: 2px 20px;
+  opacity: 1 !important;
+  color: #000;
   transition: background 0.3s;
+  font-size: 18px !important;
+  text-align: center;
 }
 
 .nav-links li a:hover {
@@ -215,6 +213,10 @@ body {
 
 .nav-links.open {
   display: flex;
+  height: fit-content;
+  padding-bottom: 20px;
+  z-index: 9999999999999999999999999;
+
   animation: slideDown 0.3s ease-in-out;
 }
 
