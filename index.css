@@ -181,6 +181,12 @@ section h2 {
   grid-gap: 30px;
   padding-top: 50px;
 }
+.group-team {
+  height: 75vh;
+  object-fit: cover;
+  margin-bottom: 50px;
+  width: 100%;
+}
 
 .single_project-2 {
   width: 100%;
