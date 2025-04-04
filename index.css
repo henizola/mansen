@@ -1015,4 +1015,10 @@ footer ~ * {
   .logo {
     height: 80px !important;
   }
+  .group-team {
+    height: auto;
+    object-fit: cover;
+    margin: 50px 0;
+    width: 100%;
+  }
 }
