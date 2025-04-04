@@ -810,15 +810,15 @@ footer ~ * {
 }
 
 .industry:nth-child(2)::before {
-  background-image: url("./Assets/manson\ web\ image\ 1.png"); /* Replace with actual image */
+  background-image: url("./Assets/images-01.png"); /* Replace with actual image */
 }
 
 .industry:nth-child(3)::before {
-  background-image: url("./Assets/manson\ web\ image\ 3.png"); /* Replace with actual image */
+  background-image: url("./Assets/images-02.png"); /* Replace with actual image */
 }
 
 .industry:nth-child(4)::before {
-  background-image: url("./Assets/manson\ web\ image\ 5.png"); /* Replace with actual image */
+  background-image: url("./Assets/images-03.png"); /* Replace with actual image */
 }
 
 .industry:nth-child(5)::before {
