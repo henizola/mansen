@@ -30,9 +30,9 @@ body {
 
 .logo {
   width: auto;
-  height: 40px;
+  height: 100px;
 
-  margin-top: 15%;
+  /* margin-top: 15%; */
 
   margin-right: 0px;
   opacity: 1;
@@ -804,15 +804,15 @@ footer ~ * {
 }
 
 .industry:nth-child(2)::before {
-  background-image: url("./Assets/wellness.png"); /* Replace with actual image */
+  background-image: url("./Assets/manson\ web\ image\ 1.png"); /* Replace with actual image */
 }
 
 .industry:nth-child(3)::before {
-  background-image: url("./Assets/office.png"); /* Replace with actual image */
+  background-image: url("./Assets/manson\ web\ image\ 3.png"); /* Replace with actual image */
 }
 
 .industry:nth-child(4)::before {
-  background-image: url("./Assets/mall.png"); /* Replace with actual image */
+  background-image: url("./Assets/manson\ web\ image\ 5.png"); /* Replace with actual image */
 }
 
 .industry:nth-child(5)::before {
@@ -1007,6 +1007,6 @@ footer ~ * {
     display: none;
   }
   .logo {
-    height: 20px !important;
+    height: 80px !important;
   }
 }
