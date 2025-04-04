@@ -413,6 +413,7 @@ textarea::placeholder {
 .footer_center {
   padding-left: 20px;
   padding-right: 10px;
+  height: fit-content;
 }
 
 .bold {
