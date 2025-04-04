@@ -38,7 +38,7 @@
       <div class="header-limiter">
         <h1>
           <a href="#">
-            <img src="./Assets/for web-02.png" alt="Logo" class="logo"
+            <img src="./Assets/logo.png" alt="Logo" class="logo"
           /></a>
         </h1>
 
@@ -51,15 +51,32 @@
           <!-- <a href="#contact" class="contact-btn">Contact Us</a> -->
           <a href="#contact" class="nav-link">Contact Us</a>
         </nav>
-      </div>
+      
     </header>
+    <div class="navbar mobile-only">
+      <div class="nav-container">
+        <div class="logo">   <img src="./Assets/logo.png" alt="Logo" class="logo"/></div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 
     <section id="home">
       <div class="owl-carousel" id="owl-carousel-2">
         <img src="./Assets/Brand Look and Feel-13.png" class="sliders" alt="" />
-        <img src="./Assets/Brand Look and Feel-14.png" class="sliders" alt="" />
-        <img src="./Assets/Brand Look and Feel-15.png" class="sliders" alt="" />
-        <img src="./Assets/Brand Look and Feel-16.png" class="sliders" alt="" />
+        <img src="./Assets/IMG_1344.jpeg" class="sliders" alt="" />
+        <img src="./Assets/IMG_1345.jpeg" class="sliders" alt="" />
+        <img src="./Assets/IMG_1346.jpeg" class="sliders" alt="" />
       </div>
     </section>
     <section class="parallax-video-section">
@@ -70,7 +87,7 @@
     </section>
 
     <section class="pattern-section">
-      <h1>Business culture</h1>
+      <h1>Business Culture</h1>
       <p>
         We operate diﬀerently. By deeply understanding the unique challenges and
         opportunities across industries, we raise the bar by pushing boundaries
@@ -238,7 +255,7 @@
         </div>
       </div>
       <div class="industry">
-        <div class="industry-title">The Experience Mall</div>
+        <div class="industry-title">The Arada Luxury Mall</div>
         <div class="industry-description">
           Shopping is just the beginning. the spaces blend curated retail with
           immersive entertainment, making moments that remain long after the
@@ -296,7 +313,7 @@
         <input type="number" placeholder="PHONE" />
         <textarea type="text" placeholder="Description" vlaue="Description">
         </textarea>
-        <input type="submit" value="SEND" class="submit_button" />
+        <button class="submit_button">SEND</button>
       </form>
     </section>
 
@@ -448,7 +465,7 @@
           nav: false, // Show next/prev buttons
           dots: false, // Show dots
           autoplay: true, // Auto-play slides
-          autoplayTimeout: 3000, // Delay in ms (3 seconds)
+          autoplayTimeout: 5000, // Delay in ms (3 seconds)
           autoplayHoverPause: false, // Pause autoplay on hover
           responsive: {
             0: { items: 1 }, // 1 item on small screens

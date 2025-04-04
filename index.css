@@ -30,9 +30,9 @@ body {
 
 .logo {
   width: auto;
-  height: 100px;
+  height: 40px;
 
-  margin-top: 0px;
+  margin-top: 15%;
 
   margin-right: 0px;
   opacity: 1;
@@ -131,7 +131,7 @@ section h2 {
 
 .sliders {
   width: 100vw;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 .slogan {
@@ -159,7 +159,7 @@ section h2 {
 }
 
 .big-title {
-  font-size: 57px;
+  font-size: 47px;
   font-weight: 900;
   line-height: 50px;
   text-align: center;
@@ -320,13 +320,15 @@ input {
   background-color: transparent;
   height: 50px;
   border-bottom: 1px solid black;
+  padding-top: 30px;
 }
 
 input::placeholder {
   color: #999;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   text-align: left;
+  padding-top: 0px;
 }
 
 textarea {
@@ -338,18 +340,19 @@ textarea {
 
 textarea::placeholder {
   color: #999;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   text-align: left;
 }
 .submit_button {
-  margin-top: 50px;
+  margin-top: 20px;
   border: none;
   font-size: 18px;
   font-weight: 600;
   text-align: left;
   border: 1px solid gray;
   text-align: center;
+  padding: 5px 0;
   width: 120px;
 }
 
@@ -581,7 +584,7 @@ footer ~ * {
 }
 
 .big-text {
-  font-size: 10vw; /* Scales responsively */
+  font-size: 8vw; /* Scales responsively */
   font-weight: bold;
   color: white;
   position: absolute;
@@ -591,12 +594,12 @@ footer ~ * {
 
 .text-one {
   top: 35vh; /* First text */
-  left: -60vh;
+  left: -55vh;
 }
 
 .text-two {
   top: 50vh; /* Second text */
-  right: -10vh;
+  right: -15vh;
 }
 
 .columns-section {
@@ -874,14 +877,17 @@ footer ~ * {
 }
 
 .mobile-only {
-  display: none;
+  display: none !important;
 }
 
 @media all and (max-width: 600px) {
   .mobile-only {
-    display: flex;
+    display: block !important;
   }
-
+  .logo {
+    margin: 0 !important;
+    height: 100px !important;
+  }
   .desc {
     width: 100%;
   }
@@ -892,9 +898,10 @@ footer ~ * {
 
   #home {
     height: fit-content;
-    padding: 0 5vw;
-    padding-top: 150px;
-    grid-template-columns: 1fr 50vw;
+    margin-top: 0;
+    /* padding: 0 5vw; */
+    /* padding-top: 150px; */
+    /* grid-template-columns: 1fr 50vw; */
   }
 
   .pattern-section h1 {
@@ -983,6 +990,7 @@ footer ~ * {
   .header-limiter {
     height: 20px !important;
     display: flex;
+
     flex-direction: row !important;
     align-items: center;
   }
@@ -992,5 +1000,8 @@ footer ~ * {
   }
   .footer {
     grid-template-columns: 1fr;
+  }
+  .header-fixed {
+    display: none;
   }
 }
