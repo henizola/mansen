@@ -5,12 +5,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $phone = htmlspecialchars($_POST['phone']);
     $description = htmlspecialchars($_POST['description']);
 
-    $to = "Z.W.HENOK@GMAIL.COM";
+    $to = "info@manseninvestments.com";
     $subject = "New Contact Form Submission";
     $body = "Name: $name\nPhone: $phone\nDescription: $description";
 
-    $headers = "From: no-reply@yourdomain.com\r\n";
-    $headers .= "Reply-To: no-reply@yourdomain.com\r\n";
+    $headers = "From: no-reply@manseninvestments.com\r\n";
+    $headers .= "Reply-To: no-reply@manseninvestments.com\r\n";
 
     if (mail($to, $subject, $body, $headers)) {
         $message = "<span style='color:green;'>Form submitted successfully!</span>";
