@@ -1,11 +1,11 @@
 <?php
-$message = '';
+$showAlert = false;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = htmlspecialchars($_POST['name']);
     $phone = htmlspecialchars($_POST['phone']);
     $description = htmlspecialchars($_POST['description']);
 
-    $to = "info@manseninvestments.com";
+    $to = "z.w.henok@gmail.com";
     $subject = "New Contact Form Submission";
     $body = "Name: $name\nPhone: $phone\nDescription: $description";
 
@@ -13,12 +13,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers .= "Reply-To: no-reply@manseninvestments.com\r\n";
 
     if (mail($to, $subject, $body, $headers)) {
-        $message = "<span style='color:green;'>Form submitted successfully!</span>";
-    } else {
-        $message = "<span style='color:red;'>Error submitting form. Please try again.</span>";
+        $showAlert = true;
     }
 }
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -321,7 +320,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div id="contact"></div>
   </section>
 
-  <section class="keep_in_touch" id="contact">
+  <section class="keep_in_touch">
     <h3 class="sub-title">CONTACT US</h3>
   
     <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
@@ -329,8 +328,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <input type="number" name="phone" placeholder="PHONE" required />
       <textarea name="description" placeholder="Description" required></textarea>
       <button type="submit" class="submit_button">SEND</button>
-      <div class="form-message" style="margin-top:10px;"><?php echo $message; ?></div>
     </form>
+  
+    <?php if ($showAlert): ?>
+      <script>
+        alert("Form submitted successfully!");
+      </script>
+    <?php endif; ?>
   </section>
   
 
@@ -343,7 +347,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <h4 class="bold">OFFICE LOCATION</h4>
         <p class="location">Addis Ababa Ethiopia<br /></p>
         <a href="" class="location"></a>
-        <a href="mailto:info@manseninvestments.com" class="location mt-10">info@manseninvestments.com
+        <a href="mailto:z.w.henok@gmail.com" class="location mt-10">z.w.henok@gmail.com
         </a>
     
       </div>
