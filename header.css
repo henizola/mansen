@@ -1,5 +1,5 @@
 .header-fixed {
-  background-color: #e6e7e8;
+  background-color: #ffffff;
   position: fixed;
   padding: 0px 40px;
   height: fit-content;
@@ -63,8 +63,8 @@
   text-decoration: none;
   color: #ffffff;
   opacity: 0.9;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .header-fixed .header-limiter nav a:hover {

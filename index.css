@@ -1042,8 +1042,10 @@ footer ~ * {
     margin-top: 40vh;
   }
   .big-title {
-    padding-bottom: 0 !important;
+    padding-bottom: 10px !important;
+    padding-top: 40px !important;
     font-size: 32px;
+    line-height: 40px;
   }
   .industries-section {
     padding-bottom: 0 !important;
