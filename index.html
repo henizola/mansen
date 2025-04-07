@@ -94,9 +94,10 @@
     </p>
 
     <img class="floating-icon" src="./Assets/for web-03.png" alt="Floating Icon" />
-    <div id="businesses"></div>
+  
+  
   </section>
-
+  <div id="businesses"></div>
   <section class="parallax-section-2" >
     <p class="top-left-text">
       In building assets through strategic portfolio management maximizing
@@ -300,17 +301,17 @@
     <div id="contact"></div>
   </section>
 
-  <section class="keep_in_touch" >
+  <section class="keep_in_touch">
     <h3 class="sub-title">CONTACT US</h3>
-
-    <form>
-      <input type="text" placeholder="NAME" />
-      <input type="number" placeholder="PHONE" />
-      <textarea type="text" placeholder="Description" vlaue="Description">
-        </textarea>
-      <button class="submit_button">SEND</button>
+  
+    <form method="POST" action="contact.php">
+      <input type="text" name="name" placeholder="NAME" required />
+      <input type="number" name="phone" placeholder="PHONE" required />
+      <textarea name="description" placeholder="Description" required></textarea>
+      <button type="submit" class="submit_button">SEND</button>
     </form>
   </section>
+  
 
   <footer>
     <div class="footer">
