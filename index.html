@@ -1,4 +1,24 @@
-<!DOCTYPE html>
+<?php
+$message = '';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $name = htmlspecialchars($_POST['name']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $description = htmlspecialchars($_POST['description']);
+
+    $to = "Z.W.HENOK@GMAIL.COM";
+    $subject = "New Contact Form Submission";
+    $body = "Name: $name\nPhone: $phone\nDescription: $description";
+
+    $headers = "From: no-reply@yourdomain.com\r\n";
+    $headers .= "Reply-To: no-reply@yourdomain.com\r\n";
+
+    if (mail($to, $subject, $body, $headers)) {
+        $message = "<span style='color:green;'>Form submitted successfully!</span>";
+    } else {
+        $message = "<span style='color:red;'>Error submitting form. Please try again.</span>";
+    }
+}
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -301,14 +321,15 @@
     <div id="contact"></div>
   </section>
 
-  <section class="keep_in_touch">
+  <section class="keep_in_touch" id="contact">
     <h3 class="sub-title">CONTACT US</h3>
   
-    <form method="POST" action="contact.php">
+    <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
       <input type="text" name="name" placeholder="NAME" required />
       <input type="number" name="phone" placeholder="PHONE" required />
       <textarea name="description" placeholder="Description" required></textarea>
       <button type="submit" class="submit_button">SEND</button>
+      <div class="form-message" style="margin-top:10px;"><?php echo $message; ?></div>
     </form>
   </section>
   
