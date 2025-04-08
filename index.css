@@ -1041,16 +1041,16 @@ footer ~ * {
     padding: 0 20px !important;
   }
   .text-one {
-    top: 30vh; /* First text */
-    left: -55vh;
+    top: 35vh; /* First text */
+    left: -65vh;
   }
 
   .text-two {
-    top: 40vh; /* Second text */
-    right: -15vh;
+    top: 45vh; /* Second text */
+    right: -25vh;
   }
   .columns-section {
-    margin-top: 40vh;
+    margin-top: 47vh;
   }
   .big-title {
     padding-bottom: 10px !important;
