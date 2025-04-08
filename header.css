@@ -230,3 +230,6 @@ body.fixed .header-fixed .header-limiter nav {
     opacity: 1;
   }
 }
+.header-fixed {
+  transition: top 0.3s;
+}

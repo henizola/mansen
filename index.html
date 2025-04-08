@@ -1,11 +1,13 @@
+
 <?php
-$showAlert = false;
+session_start();
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = htmlspecialchars($_POST['name']);
     $phone = htmlspecialchars($_POST['phone']);
     $description = htmlspecialchars($_POST['description']);
 
-    $to = "z.w.henok@gmail.com";
+  $to = "info@manseninvestments.com";
     $subject = "New Contact Form Submission";
     $body = "Name: $name\nPhone: $phone\nDescription: $description";
 
@@ -13,10 +15,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers .= "Reply-To: no-reply@manseninvestments.com\r\n";
 
     if (mail($to, $subject, $body, $headers)) {
-        $showAlert = true;
+        $_SESSION['form_submitted'] = true;
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
     }
 }
+
+$showAlert = false;
+if (isset($_SESSION['form_submitted'])) {
+    $showAlert = true;
+    unset($_SESSION['form_submitted']);
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,23 +59,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="header-limiter">
       <h1>
         <a href="#">
-          <img src="./Assets/logo.png" alt="Logo" class="logo" /></a>
+          <img src="./Assets/logo.jpg" alt="Logo" class="logo" />
+        </a>
       </h1>
-
       <nav>
         <a href="#about">About Us</a>
         <a href="#industry" class="nav-link">Brands</a>
         <a href="#businesses" class="nav-link">Portfolio</a>
         <a href="#approach" class="nav-link">Business approach</a>
-
-        <!-- <a href="#contact" class="contact-btn">Contact Us</a> -->
         <a href="#contact" class="nav-link">Contact Us</a>
       </nav>
-
+    </div>
   </header>
   <div class="navbar mobile-only">
     <div class="nav-container">
-      <div class="logo"> <img src="./Assets/logo.png" alt="Logo" class="logo" /></div>
+      <div class="logo">  <a href="#">
+        <img src="./Assets/logo.jpg" alt="Logo" class="logo" />
+      </a></div>
       <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
@@ -87,13 +98,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   </div>
   </div>
 
-  <section id="home">
-    <div class="owl-carousel" id="owl-carousel-2">
-      <img src="./Assets/Brand Look and Feel-13.png" class="sliders" alt="" />
-      <img src="./Assets/IMG_1344.jpeg" class="sliders" alt="" />
-      <img src="./Assets/IMG_1345.jpeg" class="sliders" alt="" />
-      <img src="./Assets/IMG_1346.jpeg" class="sliders" alt="" />
+  <section id="home" class="mobile-only">
+   
+    <div class="owl-carousel " id="owl-carousel-3">
+      <img src="./Assets/slider-mobile-0.jpg" class="sliders" alt="" />
+      <img src="./Assets/slider-mobile-1.jpg" class="sliders" alt="" />
+      <img src="./Assets/slider-mobile-2.jpg" class="sliders" alt="" />
+      <img src="./Assets/slider-mobile-3.jpg" class="sliders" alt="" />
     </div>
+  </section>
+  <section id="home" class="pc-only">
+    <div class="owl-carousel " id="owl-carousel-2">
+      <img src="./Assets/Brand Look and Feel-13.png" class="sliders " alt="" />
+      <img src="./Assets/slider-pc-1.jpg" class="sliders " alt="" />
+      <img src="./Assets/slider-pc-2.jpg" class="sliders " alt="" />
+      <img src="./Assets/slider-pc-3.jpg" class="sliders " alt="" />
+    </div>
+
   </section>
   <section class="parallax-video-section">
     <video id="parallaxVideo" autoplay muted loop>
@@ -116,8 +137,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   
   
   </section>
-  <div id="businesses"></div>
-  <section class="parallax-section-2" >
+  
+  <section class="parallax-section-2"  id="businesses">
+  
     <p class="top-left-text">
       In building assets through strategic portfolio management maximizing
       returns, minimizing risk, and aligning every move with your long-term
@@ -238,13 +260,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
       </div>
     </section>
-    <div id="industry"></div>
+  
   </section>
 
   <section class="industries-section" >
-    <h1 class="big-title" style=" text-align: left; padding: 0 0 50px 50px">
+    <div id="industry"></div>
+    <!-- <h1 class="big-title" style=" text-align: left; padding: 0 0 50px 50px">
       Flagship Brands That Redefine Industries
-    </h1>
+    </h1> -->
     <div class="industry">
       <div class="industry-title">Minab Wellness Center</div>
       <div class="industry-description">
@@ -317,11 +340,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <h3>Future-First Innovation</h3>
       <h3>Impact That Scales</h3>
     </div>
-    <div id="contact"></div>
+ 
   </section>
-
+  <div id="contact"></div>
   <section class="keep_in_touch">
-    <h3 class="sub-title">CONTACT US</h3>
+ 
+    <h3 class="big-title" style="width:100%; text-align: left;">CONTACT US</h3>
   
     <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
       <input type="text" name="name" placeholder="NAME" required />
@@ -331,23 +355,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </form>
   
     <?php if ($showAlert): ?>
-      <script>
-        alert("Form submitted successfully!");
-      </script>
-    <?php endif; ?>
+    <script>
+      window.addEventListener('load', function() {
+       alert("Thank you for filling out the form. We will reach out to you as soon as possible.");
+      });
+    </script>
+  <?php endif; ?>
   </section>
   
 
   <footer>
     <div class="footer">
       <div class="right__border">
-        <img src="./Assets/for web-02.png" alt="Logo" style="height: 100px" />
+        <img src="./Assets/logo.jpg" alt="Logo" style="height: 100px" />
       </div>
       <div class="footer_center right__border">
         <h4 class="bold">OFFICE LOCATION</h4>
         <p class="location">Addis Ababa Ethiopia<br /></p>
         <a href="" class="location"></a>
-        <a href="mailto:z.w.henok@gmail.com" class="location mt-10">z.w.henok@gmail.com
+        <a href="mailto:info@manseninvestments.com" class="location mt-10">info@manseninvestments.com
         </a>
     
       </div>
@@ -495,6 +521,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $("#owl-carousel-2").owlCarousel();
     });
   </script>
+    <script>
+      $(document).ready(function () {
+        $("#owl-carousel-3").owlCarousel({
+          loop: true, // Enable looping
+          margin: 0, // Space between items
+          nav: false, // Show next/prev buttons
+          dots: false, // Show dots
+          autoplay: true, // Auto-play slides
+          autoplayTimeout: 5000, // Delay in ms (3 seconds)
+          autoplayHoverPause: false, // Pause autoplay on hover
+          responsive: {
+            0: { items: 1 }, // 1 item on small screens
+            600: { items: 1 }, // 2 items on tablets
+            1000: { items: 1 }, // 3 items on larger screens
+          },
+        });
+      });
+      $(document).ready(function () {
+        $("#owl-carousel-3").owlCarousel();
+      });
+    </script>
   <script>const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
     const links = document.querySelectorAll('.nav-links li a');
@@ -512,6 +559,50 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
   </script>
 
+
+<script>
+  let lastScrollTop = 0;
+const header = document.querySelector('.header-fixed');
+
+window.addEventListener("scroll", () => {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down
+    header.style.top = "-100px"; // Adjust based on header height
+  } else {
+    // Scrolling up
+    header.style.top = "0";
+  }
+
+  lastScrollTop = scrollTop;
+});
+
+</script>
+
+<script>
+  let lastScrollTopMobile = 0;
+  const desktopHeader = document.querySelector('.header-fixed');
+  const mobileNavbar = document.querySelector('.navbar');
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTopMobile) {
+      // Scrolling down
+      desktopHeader.style.top = "-100px"; 
+      mobileNavbar.style.top = "-100px";
+    } else {
+      // Scrolling up
+      desktopHeader.style.top = "0";
+      mobileNavbar.style.top = "0";
+    }
+
+    lastScrollTopMobile = scrollTop;
+  });
+</script>
+
+
 </body>
 
-</html>
+</html>c
